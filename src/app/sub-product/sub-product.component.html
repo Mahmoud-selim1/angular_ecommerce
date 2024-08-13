@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+<h1 *ngIf="msg.length > 0">{{ msg }}</h1>
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-6 col-lg-4 col-12 mb-3" *ngFor="let i of all">
+      <div class="card">
+        <img src="{{ i.images[0] }}" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ i.title }}</h5>
+          <p class="card-text">
+            {{ i.description }}
+          </p>
+          <p class="card-text">Rate : {{ i.ratingsAverage }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
