@@ -7,6 +7,8 @@ import { SubCategoriesComponent } from './main/sub-categories/sub-categories.com
 import { CategoryComponent } from './main/category/category.component';
 import { StaticSubcategoriesComponent } from './main/static-subcategories/static-subcategories.component';
 import { SubProductComponent } from './sub-product/sub-product.component';
+import { SignUpComponent } from './auth/sign-up/sign-up.component';
+import { SignInComponent } from './auth/sign-in/sign-in.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,6 +19,8 @@ const routes: Routes = [
   { path: 'category', component: CategoryComponent },
   { path: 'static-sub/:id', component: StaticSubcategoriesComponent },
   { path: 'sub-product/:id', component: SubProductComponent },
+  { path: 'signup', component: SignUpComponent },
+  { path: 'signin', component: SignInComponent },
 ];
 
 @NgModule({

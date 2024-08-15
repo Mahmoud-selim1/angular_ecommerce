@@ -14,8 +14,10 @@ import { SubCategoriesComponent } from './main/sub-categories/sub-categories.com
 import { CategoryComponent } from './main/category/category.component';
 import { StaticSubcategoriesComponent } from './main/static-subcategories/static-subcategories.component';
 import { SubProductComponent } from './sub-product/sub-product.component';
+import { SignUpComponent } from './auth/sign-up/sign-up.component';
+import { SignInComponent } from './auth/sign-in/sign-in.component';
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, FooterComponent, HomeComponent, ProductsComponent, BrandComponent, SubCategoriesComponent, CategoryComponent, StaticSubcategoriesComponent, SubProductComponent],
+  declarations: [AppComponent, NavbarComponent, FooterComponent, HomeComponent, ProductsComponent, BrandComponent, SubCategoriesComponent, CategoryComponent, StaticSubcategoriesComponent, SubProductComponent, SignUpComponent, SignInComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

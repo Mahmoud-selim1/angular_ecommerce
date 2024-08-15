@@ -1,0 +1,53 @@
+<app-navbar></app-navbar>
+<div class="container my-5">
+  <div class="card p-3">
+    <div class="form-group my-2">
+      <label for="name" class="form-label">Name</label>
+      <input
+        type="text"
+        id="name"
+        class="form-control"
+        [(ngModel)]="obj.name"
+      />
+    </div>
+    <div class="form-group my-2">
+      <label for="email" class="form-label">Email</label>
+      <input
+        type="text"
+        id="email"
+        class="form-control"
+        [(ngModel)]="obj.email"
+      />
+    </div>
+    <div class="form-group my-2">
+      <label for="password" class="form-label">Password</label>
+      <input
+        type="text"
+        id="password"
+        class="form-control"
+        [(ngModel)]="obj.password"
+      />
+    </div>
+    <div class="form-group my-2">
+      <label for="repassword" class="form-label">RePassword</label>
+      <input
+        type="text"
+        id="repassword"
+        class="form-control"
+        [(ngModel)]="obj.rePassword"
+      />
+    </div>
+    <div class="form-group my-2">
+      <label for="phone" class="form-label">Phone</label>
+      <input
+        type="text"
+        id="phone"
+        class="form-control"
+        [(ngModel)]="obj.phone"
+      />
+    </div>
+    <div class="d-grid">
+      <button (click)="signUp()" class="btn btn-info">Sign Up</button>
+    </div>
+  </div>
+</div>
